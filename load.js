@@ -133,7 +133,7 @@ function makePurchase(productID, price, sellerID, csrf) {
                         .then((resp) => {
                             console.log(resp)
                             if (savedRobux !== 0) {
-                                notification("Saved robux from RoSaver!" ,"You saved " + savedRobux + " robux by using RoSaver!")
+                                notification("Saved robux successfully!" ,"You saved " + savedRobux + " robux!")
                                 console.log("sent!")
                                 setTimeout(() => window.location.reload(), 500);
                             }
